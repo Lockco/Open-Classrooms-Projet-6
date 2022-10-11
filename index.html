@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>JustStreamIt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css'>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="page-header">
+    <div class="header-logo">
+      <a href="index.html"><img alt="JustStreamIt logo" src="images/title_JustStreamIt.png"></a>
+    </div>
+    <nav class="header_menu">
+      <ul class="nav_bar">
+        <li class="nav"><a href="index.html">Accueil</a></li>
+        <li class="nav"><a href="#categories">Catégories</a></li>
+      </ul>
+    </nav>
+</header>
+
+<section class="best" id="best-movie">
+  <div class="featured">
+    <div class="best-cover" id="top0">
+      <img alt="movie cover" src="/images/cover.jpg">
+    </div>
+    <div class="best_movie">
+      <h1 class="best-movie-title" id="top-title">""</h1>
+    </div>
+    <div class="buttons">
+      <button title="Lecture" class="button"><i class="fa-solid fa-play"></i> Lecture</button>
+      <button title="Détails" aria-label="open modal" class="button"><i class="fa-solid fa-circle-info"></i> Détails</button>
+    </div>
+    <div class="best-movie-description">
+      <p class="best-desc" id="top-desc">""</p>
+    </div>
+  </div>
+</section>
+
+<div class="carousels"></div>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span title="fermer" class="close">&times;</span>
+    <div class="modal-cover-image">
+      <img alt="movie cover" id="modal-cover" src="/images/cover.jpg">
+    </div>
+    <div class="modal-movie-info">
+      <header class="modal_header">
+        <h3 class="title" id="modal-title">""</h3>
+        <button class="modal-button" title="Lecture"><i class="fa-solid fa-play"></i></button>
+      </header>
+      <div class="metadata">
+        <p id="modal-year">""</p> • <p id="modal-rating">""</p> • <p id="modal-duration">""</p><br><br>
+        <p class="genres" id="modal-genres">""</p><br><br>
+        <strong>IMDb : </strong><br>
+        <p id="modal-imdb">""</p><br><br>
+      </div>
+      <div>
+        <strong>Réalisé par : </strong>
+        <p id="modal-directors">""</p><br><br>
+        <strong>Note : </strong>
+        <p id="modal-cast">""</p><br><br>
+        <strong>Pays : </strong>
+        <p id="modal-country">""</p><br><br>
+        <strong>Box office : </strong><br>
+        <p id="modal-box-office">""</p><br><br><br>
+        <strong>Synopsis : </strong><br><br>
+        <p class="plot" id="modal-desc">""</p><br>
+      </div>
+    </div>
+  </div>
+</div>
+<script  src="script.js"></script>
+</body>
+
+</html>
