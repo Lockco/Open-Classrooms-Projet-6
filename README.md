@@ -4,7 +4,7 @@ Développez une interface utilisateur pour une application web Python
 
 L'objectif est de développer un site web qui permettra aux abonnés de l'association JusTStreamIt, de visualiser en temps réel des films intéressants.
 
-Pour ce faire les données seronts récupéré sur l'API OCMovies-API via des requêtes puis les afficher sur une interface web.
+Pour ce faire les données seront récupérées sur l'API OCMovies-API via des requêtes puis les affichés sur une interface web.
 
 ## Pré-requis 
 
@@ -13,7 +13,7 @@ Pour ce faire les données seronts récupéré sur l'API OCMovies-API via des re
 
 Pour pouvoir utiliser l'API OCMovies-API veuillez suivre les instructions présent sur ce dépôt :
 
-* API ([OCMovies-API](Télécharger https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR))
+* API ([OCMovies-API](Télécharger https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR)) et suivez les instructions.
 
 1. **Téléchargement du projet.**
 
@@ -28,7 +28,7 @@ Pour pouvoir utiliser l'API OCMovies-API veuillez suivre les instructions prése
 
     Copier le programme source:
 
-    ```git clone https://github.com/Lockco/Open-Classrooms-Projet-4```
+    ```git clone https://github.com/Lockco/Open-Classrooms-Projet-6```
     
 2. **Lancement du programme.**
 
