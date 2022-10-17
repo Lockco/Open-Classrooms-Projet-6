@@ -55,17 +55,13 @@ function fetchModalData(id) {
 
             document.getElementById('modal-cover').src = data["image_url"];
             document.getElementById('modal-title').innerHTML = data["title"];
-
             document.getElementById('modal-year').innerHTML = data["year"];
             document.getElementById('modal-duration').innerHTML = data["duration"] + " min";
             document.getElementById('modal-genres').innerHTML = data["genres"];
             document.getElementById('modal-imdb').innerHTML = data["imdb_score"] + " / 10";
-
             document.getElementById('modal-directors').innerHTML = data["directors"];
             document.getElementById('modal-cast').innerHTML = data["actors"] + "...";
             document.getElementById('modal-country').innerHTML = data["countries"];
-
-
 
             if (typeof data["rated"] === 'string' || data["rated"] instanceof String)
                 document.getElementById('modal-rating').innerHTML = data["rated"];
