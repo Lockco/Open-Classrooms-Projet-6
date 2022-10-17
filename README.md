@@ -6,3 +6,38 @@ L'objectif est de développer un site web qui permettra aux abonnés de l'associ
 
 Pour ce faire les données seronts récupéré sur l'API OCMovies-API via des requêtes puis les afficher sur une interface web.
 
+## Pré-requis 
+
+* Python 3 installé ([Télécharger Python](https://www.python.org/downloads/))
+* Git ([Télécharger Git](https://github.com/))
+
+Pour pouvoir utiliser l'API OCMovies-API veuillez suivre les instructions présent sur ce dépôt :
+
+* API ([OCMovies-API](Télécharger https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR))
+
+1. **Téléchargement du projet.**
+
+
+    Depuis votre terminal, placez-vous à l'endroit souhaité:
+    
+    ```cd [chemin d'accès]```  
+    
+    Creer un nouveau dossier:
+    
+    ```mkdir [nom de votre dossier]```
+
+    Copier le programme source:
+
+    ```git clone https://github.com/Lockco/Open-Classrooms-Projet-4```
+    
+2. **Lancement du programme.**
+
+    Lancer l'API OCMovies-API
+    
+    Puis à l'aide de votre naviguateur ouvrez index.html
+
+## Remerciements
+
+Merci à **Julien** et **Benjamin** pour leur aide précieuse.
+    
+    
