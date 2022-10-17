@@ -34,7 +34,8 @@ Pour pouvoir utiliser l'API OCMovies-API veuillez suivre les instructions prése
 
     Lancer l'API OCMovies-API
     
-    Puis à l'aide de votre naviguateur ouvrez index.html
+    Puis à l'aide de votre naviguateur ouvrez index.html situé dans Open-Classrooms-Projet-6
+
 
 ## Remerciements
 
