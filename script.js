@@ -238,7 +238,7 @@ async function buildCarousel(category, name, skip = 0) {
 
 window.addEventListener('load', () => {
     buildCarousel("Meilleurs films", "best", 1);
-    buildCarousel("Horeur", "horror");
+    buildCarousel("Horreur", "horror");
     buildCarousel("Thriller", "thriller");
     buildCarousel("Aventure", "Adventure");
 
