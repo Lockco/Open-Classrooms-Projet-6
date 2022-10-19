@@ -22,6 +22,9 @@ function fetchBestMovie() {
                     bestDesc.innerHTML = data["description"];
                 })
         })
+        .catch(error => {
+            console.error(`Une erreur empêche de récupérer les informations : ${error}`);
+        });
 
 }
 
@@ -83,31 +86,37 @@ function fetchModalData(id) {
                 document.getElementById('modal-desc').innerHTML = "indisponible";
 
         })
+        .catch(error => {
+            console.error(`Une erreur empêche de récupérer les informations : ${error}`);
+        });
 }
 
 
 // Gestion de la catégorie
 
 async function fetchCategories(name, skip, total = 7) {
-
+ 
     const results = await fetch(mainUrl + "?sort_by=-imdb_score&genre=" + name);
 
-    if (!results.ok)
-        return
-    const data = await results.json();
-    let moviesData = Array(...data.results);
+    try{    
+        if (!results.ok)
+            return
+        const data = await results.json();
+        let moviesData = Array(...data.results);
 
-    if (skip > 0)
-        moviesData.splice(0, skip);
+        if (skip > 0)
+            moviesData.splice(0, skip);
 
-    if (moviesData.length < total) {
-        let results2 = await (await fetch(data.next)).json();
-        moviesData.push(...Array(...results2.results).slice(0, total - moviesData.length));
-    }
+        if (moviesData.length < total) {
+            let results2 = await (await fetch(data.next)).json();
+            moviesData.push(...Array(...results2.results).slice(0, total - moviesData.length));
+        }
 
-    return moviesData;
+        return moviesData;
+    }catch(error) {
+        console.error(`Une erreur empêche d'obtenir les informations : ${error}`);
+      }
 }
-
 // Contrôles du carousel
 
 function moveCarouselLeft(category) {
@@ -228,10 +237,10 @@ async function buildCarousel(category, name, skip = 0) {
 }
 
 window.addEventListener('load', () => {
-    buildCarousel("Best-rated", "best", 1);
-    buildCarousel("Horror", "horror");
+    buildCarousel("Meilleurs films", "best", 1);
+    buildCarousel("Horeur", "horror");
     buildCarousel("Thriller", "thriller");
-    buildCarousel("Adventure", "Adventure");
+    buildCarousel("Aventure", "Adventure");
 
     fetchBestMovie()
 });
